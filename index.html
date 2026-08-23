@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas de Sousa Rodrigues Fortaleza - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Lucas Fortaleza</h1>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Botão de Alternância de Tema e Menu Mobile -->
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Alternar tema">🌙 Tema</button>
+                <button id="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="about-content">
+                    <p>Olá! Meu nome é <strong>Lucas de Sousa Rodrigues Fortaleza</strong> (RU: 4973538). Sou estudante de Engenharia de Software e apaixonado por tecnologia, desenvolvimento web e arquitetura de sistemas.</p>
+                    <p>Busco constantemente aprimorar minhas habilidades em desenvolvimento frontend, backend e práticas ágeis. Nas horas vagas, gosto de estudar infraestrutura de nuvem, praticar exercícios físicos e explorar novas ferramentas de software.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="section">
+            <div class="container">
+                <h2>Formação Acadêmica e Cursos</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Bacharelado em Engenharia de Software</h3>
+                        <p class="institution">UNINTER</p>
+                        <p>Cursando — Foco em Engenharia de Requisitos, Arquitetura de Software e Desenvolvimento Web.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Fundamentos de Programação Web</h3>
+                        <p class="institution">Desenvolvimento Frontend</p>
+                        <p>Domínio de HTML5 semântico, estilização com CSS3 puro e interatividade com JavaScript moderno.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Idiomas</h3>
+                        <p class="institution">Conhecimentos Linguísticos</p>
+                        <p>Português (Nativo) e Inglês (Técnico / Leitura e Documentação).</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Sistema de Reserva da Biblioteca</h3>
+                        <p>Modelagem e requisitos de um sistema de reservas de acervo universitário utilizando metodologia Scrum e Kanban.</p>
+                        <a href="https://github.com/lucasfortaleza/mudar-pelo-seu-link" target="_blank" class="btn-link">Ver no GitHub</a>
+                    </article>
+                    <article class="card">
+                        <h3>Portfólio Web Pessoal</h3>
+                        <p>Website responsivo desenvolvido com HTML5, CSS3 flexbox/grid e JavaScript puro para alternância de temas e validações.</p>
+                        <a href="https://github.com/lucasfortaleza/mudar-pelo-seu-link" target="_blank" class="btn-link">Ver no GitHub</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        <small class="error-message" id="error-nome"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@dominio.com">
+                        <small class="error-message" id="error-email"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        <small class="error-message" id="error-mensagem"></small>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+                
+                <!-- Feedback visual de envio -->
+                <div id="form-feedback" class="feedback-message hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Lucas de Sousa Rodrigues Fortaleza | RU: 4973538</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
